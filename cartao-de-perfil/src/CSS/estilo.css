@@ -1,0 +1,89 @@
+@charset "UTF-08";
+
+
+@media screen and (max-width:500px) {
+    div#box {
+        height: 100%;
+        min-height: 100vh;
+        width: 500px;
+        padding: unset;
+        border-radius: unset;
+        box-shadow: unset;   
+    }
+
+    body h1 {
+        margin-top: 200px;
+    }
+
+    body #foto {
+        position: absolute;
+        margin-top: 50px;
+    }
+}
+
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(28, 130, 160);
+    text-transform: uppercase;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+#box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 250px;
+    background: linear-gradient(to bottom, rgb(4, 4, 134) 100px, #fff 10px);
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.238);
+}
+
+#foto {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/perfil.jpeg);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: 25px;
+}
+
+
+h1 {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+p {
+    margin-left: 50px;
+}
+
+#informacoes {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 48px;
+}
+
+span {
+    color: grey;
+    font-size: 0.5em;
+}
