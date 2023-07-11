@@ -10,6 +10,7 @@
 * {
     margin: 0;
     font-family: var(--fonte);
+    color: var(--cor02);
 }
 
 
@@ -30,8 +31,49 @@ div#card-principal {
 }
 
 div#back {
-    width: 500px;
+    width:400px;
     height: 200px;
-    border-radius: 20px;
-    background-image: url('../src/Imagens/back.jpg');
+    border-radius: 20px 20px 0px 0px;
+    background-image: url('../Imagens/back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+
+div#info {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#info {
+    text-align: center;
+    font-size: 10px;
+}
+
+div#info p, h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px 30px;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 30px;
+    border-color: var(--cor03);
+    transition: 0.5s;
+}
+
+input:hover {
+    background-color: var(--cor03);
+    font-size: 1.5em;
+    color: #fff;
+    box-shadow: 2px 3px 10px blue;
 }
