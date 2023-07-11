@@ -11,6 +11,7 @@
     margin: 0;
     font-family: var(--fonte);
     color: var(--cor02);
+    overflow: hidden;
 }
 
 
@@ -28,6 +29,7 @@ div#card-principal {
     height: 600px;
     background-color: #fff;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.474);
 }
 
 div#back {
@@ -75,5 +77,38 @@ input:hover {
     background-color: var(--cor03);
     font-size: 1.5em;
     color: #fff;
-    box-shadow: 2px 3px 10px blue;
+}
+
+#icon > img {
+    width: 40px;
+
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    justify-content: space-evenly;
+    margin: 4px;
+}
+
+#icon {
+    margin: 20px;
+}
+
+#preco  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#preco > h2 {
+    margin-top: 0;
+}
+
+#audio {
+    width: 400px;
 }
