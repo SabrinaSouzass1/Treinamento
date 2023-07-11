@@ -1,0 +1,37 @@
+@charset "pt-br";
+
+:root {
+    --fonte: Verdana;
+    --cor01: rgb(148, 225, 229);
+    --cor02: #252525;
+    --cor03: rgb(0, 5, 149);
+}
+
+* {
+    margin: 0;
+    font-family: var(--fonte);
+}
+
+
+main {
+    min-width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor01);
+}
+
+div#card-principal {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+div#back {
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+    background-image: url('../src/Imagens/back.jpg');
+}
